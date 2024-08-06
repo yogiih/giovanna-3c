@@ -6,7 +6,23 @@
     --cor-texto: #D7F9FF;
   }
   
-  body {
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    }
+
+.cx-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+   }
+
+h1 {
+    color: var(--cor-destaque);
+}
+
