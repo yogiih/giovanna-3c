@@ -60,3 +60,18 @@ function mostraAlternativas() {
         cxAlternativas.appendChild(botaoAlternativas);
     }
 }
+
+function respostaSelecionada(opcaoSelecionada) {
+    var afirmacoes = opcaoSelecionada.afirmaçao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+function mostraResultado() {
+    cxPerguntas.textContent = "";
+    txResultado.textContent = historiaFinal;
+    cxAlternativas.textContent = "";
+}
+
+mostraPergunta();
